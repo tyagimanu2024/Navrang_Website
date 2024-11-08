@@ -1,0 +1,39 @@
+/* Full Background Image for Second Page */
+.background2 {
+    /* margin-top: 160px; */
+    background-image: url('/bg2.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Styling for the About Section Content */
+.background2-content {
+    color: black;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* color: #ffffff; */
+}
+
+/* Heading Styling */
+.background2-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Accent color for title */
+}

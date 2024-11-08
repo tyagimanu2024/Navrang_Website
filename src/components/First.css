@@ -1,0 +1,56 @@
+.background {
+    background-image: url('/background_img.png'); /* Adjust the path */
+    background-size: contain;        /* Shrinks image to fit entirely within the container */
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background:rgb(125, 117, 117); Yellow-orange overlay with 50% opacity */
+    z-index: 1;
+}
+
+
+.content {
+    position: relative;
+    color: #242222;
+    font-size: 2rem;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+}
+.follow {
+    position: absolute;
+    bottom: 20px;          /* Space from the bottom */
+    left: 20px;            /* Space from the left */
+    font-size: 1rem;
+    color: #fff;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.follow a {
+    color: #ffcc00;        /* Custom color for links */
+    text-decoration: none;
+    margin-right: 10px;    /* Space between links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.follow a:hover {
+    color: #ffd700;        /* Slightly lighter color on hover */
+}
